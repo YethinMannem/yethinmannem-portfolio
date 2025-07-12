@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yethin Mannem - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>YM</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Yethin Mannem</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Software Engineer</h2>
+                    <p class="hero-description">
+                        Passionate full-stack developer with expertise in React, Node.js, and modern web technologies. 
+                        I build scalable applications and solve complex problems with clean, efficient code.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Yethin Mannem</h3>
+                            <p>Software Engineer</p>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/yethin-mannem/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/yethinmannem" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated Software Engineer with a strong foundation in full-stack development and a passion for creating innovative solutions. 
+                        With experience in React, Node.js, and modern web technologies, I specialize in building scalable applications that deliver exceptional user experiences.
+                    </p>
+                    <p>
+                        My journey in software development has equipped me with expertise in both frontend and backend technologies, 
+                        allowing me to create comprehensive solutions from concept to deployment. I'm always eager to learn new technologies 
+                        and contribute to meaningful projects that make a difference.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-list">
+          <div class="education-item">
+            <div class="education-degree">Master of Science in Computer Science</div>
+            <div class="education-school">North Dakota State University, Fargo, United States</div>
+            <div class="education-years">2024 – 2026</div>
+          </div>
+          <div class="education-item">
+            <div class="education-degree">Bachelor of Technology in Computer Science and Engineering</div>
+            <div class="education-school">Indian Institute of Technology, Tirupati, India</div>
+            <div class="education-years">2020 – 2024</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item left" onclick="openProjectModal('mathworks-intern')">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/MathWorks_Logo.png" alt="MathWorks Logo">
+                        </div>
+                        <div class="timeline-info">
+                            <h3>Software Engineering Intern</h3>
+                            <span class="company">MathWorks</span>
+                            <span class="duration">May 2025 - Aug 2025</span>
+                        </div>
+                        <i class="fas fa-chevron-right view-details-icon"></i>
+                    </div>
+                    <span class="timeline-location right">Natick, MA, US</span>
+                </div>
+                <div class="timeline-item right" onclick="openProjectModal('gep-se')">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/GEP_Worldwide_logo.svg/2560px-GEP_Worldwide_logo.svg.png" alt="GEP Logo">
+                        </div>
+                        <div class="timeline-info" style="display: flex; flex-direction: column; gap: 0.2rem;">
+                            <h3 style="white-space: nowrap;">Software Engineer - Full Stack</h3>
+                            <span style="display: flex; gap: 0.7rem; align-items: center;">
+                                <span class="company">GEP</span>
+                                <span class="duration">Aug 2023 - Jul 2024</span>
+                            </span>
+                        </div>
+                        <i class="fas fa-chevron-right view-details-icon"></i>
+                    </div>
+                    <span class="timeline-location left">Hyderabad, Telangana, IND</span>
+                </div>
+                <div class="timeline-item left" onclick="openProjectModal('gep-intern')">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/GEP_Worldwide_logo.svg/2560px-GEP_Worldwide_logo.svg.png" alt="GEP Logo">
+                        </div>
+                        <div class="timeline-info">
+                            <h3>Technology Intern</h3>
+                            <span class="company">GEP</span>
+                            <span class="duration">May 2022 - Aug 2022</span>
+                        </div>
+                        <i class="fas fa-chevron-right view-details-icon"></i>
+                    </div>
+                    <span class="timeline-location right">Remote, IND</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-carousel">
+                <button class="carousel-arrow left" aria-label="Previous projects"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-track">
+                    <div class="project-card" onclick="openProjectModal('workmap')">
+                        <div class="project-image">
+                            <img src="workmap.png" alt="WorkMap dashboard screenshot" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="carousel-title">WorkMap</h3>
+                            <p class="carousel-desc">A data engineering project that builds ETL pipelines to process labor market data. Integrates NAICS and BLS datasets for analysis. Visualizes employment trends and wage disparities using Power BI. Empowers users with actionable insights for workforce planning.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Azure</span>
+                                <span class="tech-tag">Databricks</span>
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">PySpark</span>
+                                <span class="tech-tag">ETL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openProjectModal('mips-simulator')">
+                        <div class="project-image">
+                            <img src="mips.png" alt="MIPS Processor Simulator screenshot" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>MIPS Processor Simulator</h3>
+                            <p class="carousel-desc">A C++ simulator for the MIPS processor architecture. Executes assembly code with register and memory management. Implements instruction pipelining for realistic CPU behavior. Helps users understand computer architecture and low-level programming.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Assembly</span>
+                                <span class="tech-tag">Computer Architecture</span>
+                                <span class="tech-tag">Simulation</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="carousel-card" onclick="openProjectModal('food-organizer')">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop&crop=center" alt="Food and Recipe Management" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>Food Organizer Webapp</h3>
+                            <p class="carousel-desc">A web app for managing recipes, meal plans, and food inventory. Supports user authentication and recipe sharing. Tracks nutrition and helps reduce food waste. Built with React, Node.js, Express, and MongoDB.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Express</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openProjectModal('jyp-compiler')">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop&crop=center" alt="Programming and Code" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>JYP Compiler</h3>
+                            <p class="carousel-desc">A custom compiler for the JYP language using Lex/Yacc. Translates JYP code into assembly for execution. Demonstrates parsing, code generation, and optimization. Ideal for learning compiler design and language implementation.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Lex/Yacc</span>
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Assembly</span>
+                                <span class="tech-tag">Compiler Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openProjectModal('wcag-checker')">
+                        <div class="project-image">
+                            <img src="wcag.png" alt="WCAG Compliance Checker screenshot" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>WCAG Compliance Checker</h3>
+                            <p class="carousel-desc">A VS Code extension for web accessibility compliance. Highlights elements that violate WCAG 2.1 guidelines. Suggests real-time improvements for accessible web development. Empowers developers to build inclusive websites.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">VS Code API</span>
+                                <span class="tech-tag">WCAG 2.1</span>
+                                <span class="tech-tag">Accessibility</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openProjectModal('markdown-editor')">
+                        <div class="project-image">
+                            <img src="editor.png" alt="Real-time Multicollab Editor screenshot" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>Real-time Multicollab Editor</h3>
+                            <p class="carousel-desc">A real-time collaborative markdown editor for teams. Supports live preview and multiple users editing together. Room-based collaboration for focused group work. Ideal for documentation, note-taking, and remote teamwork.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Real-time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-arrow right" aria-label="Next projects"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript (ES6+)</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>yethin.mannem@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>United States</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/yethin-mannem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="project-modal">
+        <div class="modal-overlay" onclick="closeProjectModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close" onclick="closeProjectModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- WorkMap Project -->
+                <div id="workmap" class="project-detail" style="display: none;">
+                    <div class="project-hero">
+                        <div class="project-hero-content">
+                            <h1>WorkMap</h1>
+                            <p class="project-subtitle">A comprehensive data engineering project analyzing labor market trends through ETL pipelines and interactive Power BI visualizations</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Completed: January 2024</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration: 4 months</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Team: Solo Project</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/YethinMannem/WorkMap" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                                <a href="#" class="btn btn-secondary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-overview">
+                        <div class="overview-grid">
+                            <div class="overview-content">
+                                <h2>Project Overview</h2>
+                                <p>WorkMap is a comprehensive data engineering project that addresses real-world labor market challenges by creating an end-to-end ETL pipeline. The project integrates data from NAICS (North American Industry Classification System) and BLS (Bureau of Labor Statistics) to deliver actionable insights for understanding employment and industry trends across regions.</p>
+                                
+                                <h3>Business Problem</h3>
+                                <p>The project addresses critical challenges in labor market analysis: fragmented datasets across different sources, limited accessibility to real-time data, and unclear wage disparities without proper visualization. This creates a centralized pipeline that provides actionable insights into industry growth, wage trends, and regional employment patterns.</p>
+
+                                <h3>Key Features</h3>
+                                <ul>
+                                    <li>End-to-end ETL pipeline processing large-scale labor market data</li>
+                                    <li>Integration of NAICS and BLS datasets for comprehensive analysis</li>
+                                    <li>Interactive Power BI dashboards for regional employment trends</li>
+                                    <li>Industry distribution analysis with employment growth tracking</li>
+                                    <li>Labor productivity metrics and wage disparity analysis</li>
+                                    <li>Real-time data processing using Azure cloud services</li>
+                                    <li>Scalable architecture handling distributed data processing</li>
+                                    <li>Secure data storage with Azure Key Vault integration</li>
+                                    <li>Automated data ingestion from multiple API sources</li>
+                                    <li>Stakeholder-specific insights for students, HR professionals, and policymakers</li>
+                                </ul>
+
+                                <h3>Technical Implementation</h3>
+                                <p>The project leverages Azure Data Lake Storage for data persistence, Databricks for distributed processing with PySpark, and Power BI for interactive visualizations. The architecture supports scalable ETL operations, secure credential management, and real-time data processing for comprehensive labor market analysis.</p>
+
+                                <h3>Technical Challenges</h3>
+                                <p>The main challenges included building a robust ETL pipeline capable of handling large datasets on the cloud, integrating multiple data sources with different formats, and creating meaningful visualizations from complex labor market data. I solved these by leveraging Azure services, implementing distributed processing with Spark, and designing intuitive Power BI dashboards for stakeholder decision-making.</p>
+                            </div>
+                            <div class="overview-sidebar">
+                                <div class="tech-stack-card">
+                                    <h3>Technology Stack</h3>
+                                    <div class="tech-categories">
+                                        <div class="tech-category">
+                                            <h4>Cloud & Data</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Azure Data Lake</span>
+                                                <span class="tech-tag">Azure Databricks</span>
+                                                <span class="tech-tag">Azure Key Vault</span>
+                                                <span class="tech-tag">PySpark</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Data Sources</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">NAICS API</span>
+                                                <span class="tech-tag">BLS API</span>
+                                                <span class="tech-tag">Census Data</span>
+                                                <span class="tech-tag">Labor Statistics</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Visualization</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Power BI</span>
+                                                <span class="tech-tag">Interactive Dashboards</span>
+                                                <span class="tech-tag">Data Analysis</span>
+                                                <span class="tech-tag">ETL Pipeline</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Features</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Real-time Processing</span>
+                                                <span class="tech-tag">Scalable Architecture</span>
+                                                <span class="tech-tag">Labor Market Analysis</span>
+                                                <span class="tech-tag">Employment Trends</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="development-process">
+                        <h2>Development Process</h2>
+                        <div class="process-timeline">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Data Ingestion & API Integration</h3>
+                                    <p>Set up Azure Data Lake Storage and configured secure access with Azure Key Vault. Implemented data ingestion pipelines for NAICS Census API and BLS API using Python requests. Created automated data extraction processes for employment metrics, establishment counts, and wage data across multiple industry sectors.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>ETL Pipeline Development</h3>
+                                    <p>Built scalable data transformation processes using Azure Databricks and PySpark. Implemented data cleaning, feature engineering (employment growth rates, productivity metrics), and data integration between NAICS and BLS datasets. Created distributed processing workflows for handling large-scale labor market data.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Power BI Visualization</h3>
+                                    <p>Designed interactive dashboards with regional employment trends, industry distribution analysis, employment growth tracking, and labor productivity metrics. Implemented slicers and conditional formatting for stakeholder-specific insights. Created intuitive visualizations for students, HR professionals, and policymakers.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Pipeline Automation & Deployment</h3>
+                                    <p>Implemented Azure Data Factory for automated ETL pipeline execution. Set up scheduled data processing workflows and integrated monitoring and logging. Conducted performance optimization and security audits. Deployed the complete solution with documentation for reproducible execution.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="key-learnings">
+                        <h2>Key Learnings</h2>
+                        <div class="learnings-grid">
+                            <div class="learning-card">
+                                <i class="fas fa-cloud"></i>
+                                <h3>Azure Cloud Services</h3>
+                                <p>Gained hands-on experience with Azure Data Lake Storage, Databricks, and Key Vault, learning to design scalable, secure, and efficient data pipelines for real-world applications.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-database"></i>
+                                <h3>ETL Pipeline Development</h3>
+                                <p>Mastered building robust ETL pipelines using PySpark and Databricks, learning distributed processing, data transformation, and handling large-scale datasets efficiently.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-chart-bar"></i>
+                                <h3>Data Visualization</h3>
+                                <p>Developed expertise in Power BI for creating interactive dashboards, learning to transform complex labor market data into actionable insights for diverse stakeholders.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-industry"></i>
+                                <h3>Labor Market Analysis</h3>
+                                <p>Acquired deep understanding of labor economics, learning to integrate multiple data sources and create meaningful analysis for employment trends and industry insights.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-Commerce Platform -->
+                <div id="ecommerce" class="project-detail" style="display: none;">
+                    <div class="project-hero">
+                        <div class="project-hero-content">
+                            <h1>E-Commerce Platform</h1>
+                            <p class="project-subtitle">A full-stack e-commerce application with modern features and seamless user experience</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Completed: December 2023</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration: 3 months</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Team: Solo Project</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-secondary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-overview">
+                        <div class="overview-grid">
+                            <div class="overview-content">
+                                <h2>Project Overview</h2>
+                                <p>This e-commerce platform is a comprehensive online shopping solution built with modern web technologies. The application provides a complete shopping experience from product browsing to checkout, with robust backend services and responsive frontend design.</p>
+                                
+                                <h3>Key Features</h3>
+                                <ul>
+                                    <li>User authentication and authorization</li>
+                                    <li>Product catalog with search and filtering</li>
+                                    <li>Shopping cart and wishlist functionality</li>
+                                    <li>Secure payment processing with Stripe</li>
+                                    <li>Order management and tracking</li>
+                                    <li>Admin dashboard for inventory management</li>
+                                    <li>Responsive design for all devices</li>
+                                    <li>Real-time inventory updates</li>
+                                </ul>
+
+                                <h3>Technical Challenges</h3>
+                                <p>The main challenges included implementing secure payment processing, managing real-time inventory, and creating a scalable architecture that could handle high traffic. I solved these by using Stripe's secure payment APIs, implementing WebSocket connections for real-time updates, and designing a microservices architecture.</p>
+                            </div>
+                            <div class="overview-sidebar">
+                                <div class="tech-stack-card">
+                                    <h3>Technology Stack</h3>
+                                    <div class="tech-categories">
+                                        <div class="tech-category">
+                                            <h4>Frontend</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">React.js</span>
+                                                <span class="tech-tag">Redux</span>
+                                                <span class="tech-tag">Material-UI</span>
+                                                <span class="tech-tag">Axios</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Backend</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Node.js</span>
+                                                <span class="tech-tag">Express.js</span>
+                                                <span class="tech-tag">MongoDB</span>
+                                                <span class="tech-tag">JWT</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Payment & Services</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Stripe API</span>
+                                                <span class="tech-tag">AWS S3</span>
+                                                <span class="tech-tag">SendGrid</span>
+                                                <span class="tech-tag">Redis</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="development-process">
+                        <h2>Development Process</h2>
+                        <div class="process-timeline">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Planning & Design</h3>
+                                    <p>Started with comprehensive requirements analysis, created wireframes, and designed the database schema. Planned the architecture to ensure scalability and maintainability.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Backend Development</h3>
+                                    <p>Built RESTful APIs using Node.js and Express.js, implemented user authentication with JWT, and integrated MongoDB for data storage. Set up payment processing with Stripe.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Frontend Development</h3>
+                                    <p>Created responsive React components, implemented state management with Redux, and integrated with backend APIs. Focused on creating an intuitive user interface.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Testing & Deployment</h3>
+                                    <p>Conducted thorough testing including unit tests, integration tests, and user acceptance testing. Deployed to AWS with CI/CD pipeline for automated deployments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MIPS Processor Simulator -->
+                <div id="mips-simulator" class="project-detail" style="display: none;">
+                    <div class="project-hero">
+                        <div class="project-hero-content">
+                            <h1>MIPS Processor Simulator</h1>
+                            <p class="project-subtitle">A comprehensive MIPS architecture simulator with instruction execution, register management, and memory operations</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Completed: December 2023</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration: 3 months</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Team: Solo Project</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/YethinMannem/mips-yethin-pavan" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                                <a href="#" class="btn btn-secondary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-overview">
+                        <div class="overview-grid">
+                            <div class="overview-content">
+                                <h2>Project Overview</h2>
+                                <p>The MIPS Processor Simulator is a comprehensive implementation of the MIPS (Microprocessor without Interlocked Pipeline Stages) architecture in C++. This project demonstrates deep understanding of computer architecture principles by simulating a complete CPU with register management, memory operations, and instruction execution pipeline.</p>
+                                
+                                <h3>Educational Value</h3>
+                                <p>This simulator serves as an educational tool for understanding computer architecture fundamentals, providing hands-on experience with assembly programming, instruction execution cycles, and the inner workings of a modern processor. It bridges the gap between theoretical knowledge and practical implementation of CPU architecture.</p>
+
+                                <h3>Key Features</h3>
+                                <ul>
+                                    <li>Complete MIPS instruction set implementation (R-type, I-type, J-type)</li>
+                                    <li>32 general-purpose registers with proper register file management</li>
+                                    <li>Memory management with load/store operations</li>
+                                    <li>Instruction pipelining simulation (IF, ID, EX, MEM, WB stages)</li>
+                                    <li>Branch prediction and hazard detection</li>
+                                    <li>Assembly code parsing and execution</li>
+                                    <li>Real-time register and memory state visualization</li>
+                                    <li>Performance metrics and cycle counting</li>
+                                    <li>Error handling and debugging capabilities</li>
+                                    <li>Comprehensive test suite with sample programs</li>
+                                </ul>
+
+                                <h3>Technical Implementation</h3>
+                                <p>The simulator is built using object-oriented C++ design principles, implementing the MIPS architecture specification with accurate timing and behavior. The codebase features modular design with separate classes for registers, memory, ALU, and control units, making it extensible and maintainable.</p>
+
+                                <h3>Technical Challenges</h3>
+                                <p>The main challenges included accurately implementing the MIPS instruction set architecture, managing data hazards in pipelined execution, and ensuring proper memory alignment and addressing. I solved these by thoroughly studying the MIPS specification, implementing robust error checking, and creating comprehensive test cases to validate instruction behavior.</p>
+                            </div>
+                            <div class="overview-sidebar">
+                                <div class="tech-stack-card">
+                                    <h3>Technology Stack</h3>
+                                    <div class="tech-categories">
+                                        <div class="tech-category">
+                                            <h4>Core Technology</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">C++</span>
+                                                <span class="tech-tag">Object-Oriented Design</span>
+                                                <span class="tech-tag">Memory Management</span>
+                                                <span class="tech-tag">Algorithm Design</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Architecture</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">MIPS ISA</span>
+                                                <span class="tech-tag">CPU Pipeline</span>
+                                                <span class="tech-tag">Register File</span>
+                                                <span class="tech-tag">Memory Hierarchy</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Features</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Instruction Execution</span>
+                                                <span class="tech-tag">Hazard Detection</span>
+                                                <span class="tech-tag">Assembly Parsing</span>
+                                                <span class="tech-tag">Performance Analysis</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Testing</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Unit Testing</span>
+                                                <span class="tech-tag">Integration Testing</span>
+                                                <span class="tech-tag">Sample Programs</span>
+                                                <span class="tech-tag">Debugging Tools</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="development-process">
+                        <h2>Development Process</h2>
+                        <div class="process-timeline">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Architecture Design & Research</h3>
+                                    <p>Studied the MIPS architecture specification thoroughly, designed the class structure for registers, memory, ALU, and control units. Created detailed UML diagrams and planned the instruction execution pipeline stages.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Core Components Implementation</h3>
+                                    <p>Implemented the register file with 32 general-purpose registers, memory management system, and ALU operations. Built the instruction decoder and control unit to handle different instruction types (R-type, I-type, J-type).</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Instruction Set & Pipeline</h3>
+                                    <p>Implemented the complete MIPS instruction set including arithmetic, logical, memory, and control instructions. Created the 5-stage pipeline (IF, ID, EX, MEM, WB) with hazard detection and forwarding mechanisms.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Testing & Optimization</h3>
+                                    <p>Developed comprehensive test suites with sample assembly programs, implemented debugging tools for register and memory inspection, and optimized performance through efficient data structures and algorithms.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="key-learnings">
+                        <h2>Key Learnings</h2>
+                        <div class="learnings-grid">
+                            <div class="learning-card">
+                                <i class="fas fa-microchip"></i>
+                                <h3>Computer Architecture</h3>
+                                <p>Gained deep understanding of CPU design principles, instruction execution cycles, and the relationship between hardware and software in modern computing systems.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-code"></i>
+                                <h3>Low-Level Programming</h3>
+                                <p>Mastered C++ memory management, pointer arithmetic, and bit manipulation techniques essential for systems programming and embedded development.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-cogs"></i>
+                                <h3>Pipeline Design</h3>
+                                <p>Learned about instruction pipelining, hazard detection, and optimization techniques used in modern processors to improve performance.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-bug"></i>
+                                <h3>Systems Debugging</h3>
+                                <p>Developed skills in debugging complex systems, understanding assembly code, and creating comprehensive test suites for validation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other project details can be added here -->
+                <div id="analytics" class="project-detail" style="display: none;">
+                    <div class="project-hero">
+                        <div class="project-hero-content">
+                            <h1>Data Analytics Dashboard</h1>
+                            <p class="project-subtitle">Interactive dashboard for data visualization and analytics</p>
+                            <!-- Add more content for analytics project -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="food-organizer" class="project-detail" style="display: none;">
+                    <div class="project-hero">
+                        <div class="project-hero-content">
+                            <h1>Food Organizer Webapp</h1>
+                            <p class="project-subtitle">A comprehensive web application for managing recipes, meal planning, and food inventory with user authentication, recipe sharing, and nutritional tracking features</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Completed: March 2024</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration: 2.5 months</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Team: Solo Project</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/YethinMannem/Food_Organizer_Webapp" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                                <a href="#" class="btn btn-secondary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-overview">
+                        <div class="overview-grid">
+                            <div class="overview-content">
+                                <h2>Project Overview</h2>
+                                <p>The Food Organizer Webapp is a full-stack web application designed to help users manage their culinary journey efficiently. This comprehensive platform combines recipe management, meal planning, food inventory tracking, and nutritional analysis into a single, user-friendly interface. The application addresses the common challenges of meal planning, recipe organization, and maintaining a well-stocked kitchen.</p>
+                                
+                                <h3>Business Problem</h3>
+                                <p>Many people struggle with meal planning, recipe organization, and kitchen inventory management. Common issues include forgetting what ingredients are available, difficulty finding recipes that match available ingredients, lack of meal planning tools, and no way to track nutritional information. This application solves these problems by providing a centralized platform for all food-related organization needs.</p>
+
+                                <h3>Key Features</h3>
+                                <ul>
+                                    <li>User authentication and profile management with secure login/logout</li>
+                                    <li>Recipe management with search, filter, and categorization capabilities</li>
+                                    <li>Meal planning calendar with drag-and-drop functionality</li>
+                                    <li>Food inventory tracking with expiration date monitoring</li>
+                                    <li>Nutritional information calculation and tracking</li>
+                                    <li>Recipe sharing and social features</li>
+                                    <li>Grocery list generation based on meal plans</li>
+                                    <li>Recipe recommendations based on available ingredients</li>
+                                    <li>Mobile-responsive design for on-the-go access</li>
+                                    <li>Real-time notifications for expiring ingredients</li>
+                                </ul>
+
+                                <h3>Technical Implementation</h3>
+                                <p>The application is built using the MERN stack (MongoDB, Express.js, React.js, Node.js) with a RESTful API architecture. The frontend uses React with modern hooks and context API for state management, while the backend leverages Express.js for API endpoints and MongoDB for data persistence. The application implements JWT authentication, file upload capabilities for recipe images, and real-time features using WebSocket connections.</p>
+
+                                <h3>Technical Challenges</h3>
+                                <p>The main challenges included designing an intuitive user interface for complex meal planning, implementing efficient search and filtering algorithms, managing real-time inventory updates, and ensuring data consistency across multiple features. I solved these by creating a modular component architecture, implementing advanced search algorithms with MongoDB aggregation, using optimistic updates for better user experience, and implementing comprehensive error handling and data validation.</p>
+                            </div>
+                            <div class="overview-sidebar">
+                                <div class="tech-stack-card">
+                                    <h3>Technology Stack</h3>
+                                    <div class="tech-categories">
+                                        <div class="tech-category">
+                                            <h4>Frontend</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">React.js</span>
+                                                <span class="tech-tag">JavaScript (ES6+)</span>
+                                                <span class="tech-tag">CSS3</span>
+                                                <span class="tech-tag">HTML5</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Backend</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Node.js</span>
+                                                <span class="tech-tag">Express.js</span>
+                                                <span class="tech-tag">MongoDB</span>
+                                                <span class="tech-tag">JWT Authentication</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Features</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">User Authentication</span>
+                                                <span class="tech-tag">Recipe Management</span>
+                                                <span class="tech-tag">Meal Planning</span>
+                                                <span class="tech-tag">Inventory Tracking</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Development Tools</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Git</span>
+                                                <span class="tech-tag">npm</span>
+                                                <span class="tech-tag">MongoDB Atlas</span>
+                                                <span class="tech-tag">Heroku</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="development-process">
+                        <h2>Development Process</h2>
+                        <div class="process-timeline">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Requirements Analysis & Design</h3>
+                                    <p>Conducted user research to understand pain points in meal planning and recipe management. Designed the database schema for recipes, users, meal plans, and inventory. Created wireframes and user flow diagrams for the application interface.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Backend Development</h3>
+                                    <p>Set up the Express.js server with MongoDB connection. Implemented RESTful API endpoints for user authentication, recipe CRUD operations, meal planning, and inventory management. Added JWT authentication and middleware for route protection.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Frontend Development</h3>
+                                    <p>Built React components for recipe management, meal planning calendar, and inventory tracking. Implemented state management using React hooks and context API. Created responsive design with modern CSS and mobile-first approach.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Integration & Testing</h3>
+                                    <p>Integrated frontend and backend components, implemented real-time features, and conducted comprehensive testing. Added error handling, loading states, and user feedback mechanisms. Deployed the application to production environment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="key-learnings">
+                        <h2>Key Learnings</h2>
+                        <div class="learnings-grid">
+                            <div class="learning-card">
+                                <i class="fas fa-users"></i>
+                                <h3>User Experience Design</h3>
+                                <p>Learned to design intuitive interfaces for complex workflows, understanding user needs, and creating seamless interactions that enhance user productivity and satisfaction.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-database"></i>
+                                <h3>Database Design</h3>
+                                <p>Gained expertise in designing efficient database schemas, implementing complex queries with MongoDB aggregation, and optimizing data access patterns for better performance.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h3>Responsive Development</h3>
+                                <p>Mastered mobile-first responsive design principles, ensuring the application provides optimal user experience across all devices and screen sizes.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-rocket"></i>
+                                <h3>Full-Stack Development</h3>
+                                <p>Developed comprehensive understanding of full-stack development, from database design to frontend implementation, and deployment strategies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="jyp-compiler" class="project-detail" style="display: none;">
+                    <div class="project-hero">
+                        <div class="project-hero-content">
+                            <h1>JYP Compiler</h1>
+                            <p class="project-subtitle">A custom programming language compiler built with Lex and Yacc that translates JYP source code into assembly language, demonstrating advanced compiler design principles</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Completed: December 2023</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration: 3 months</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Team: Academic Project</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/cs19b022iittp/jyp_compiler" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                                <a href="#" class="btn btn-secondary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-overview">
+                        <div class="overview-grid">
+                            <div class="overview-content">
+                                <h2>Project Overview</h2>
+                                <p>The JYP Compiler is a comprehensive implementation of a custom programming language compiler that demonstrates deep understanding of compiler design principles. Built using Lex and Yacc (Flex and Bison), this project showcases the complete compilation process from source code parsing to assembly code generation, providing hands-on experience with language design and compiler construction.</p>
+                                
+                                <h3>Educational Value</h3>
+                                <p>This compiler project serves as an educational tool for understanding the fundamental concepts of programming language design and compiler construction. It bridges the gap between theoretical knowledge of compiler design and practical implementation, providing insights into lexical analysis, syntax parsing, semantic analysis, and code generation phases of compilation.</p>
+
+                                <h3>Key Features</h3>
+                                <ul>
+                                    <li>Custom JYP programming language with C-like syntax</li>
+                                    <li>Lexical analyzer built with Flex (Lex) for token recognition</li>
+                                    <li>Parser generator using Bison (Yacc) for syntax analysis</li>
+                                    <li>Semantic analysis with type checking and scope management</li>
+                                    <li>Intermediate code generation and optimization</li>
+                                    <li>Assembly code generation for target architecture</li>
+                                    <li>Error handling and recovery mechanisms</li>
+                                    <li>Symbol table management for variable and function tracking</li>
+                                    <li>Support for basic data types and control structures</li>
+                                    <li>Memory management and register allocation</li>
+                                </ul>
+
+                                <h3>Technical Implementation</h3>
+                                <p>The compiler is implemented in C++ using Flex and Bison for lexical and syntax analysis respectively. The system follows the traditional compiler architecture with distinct phases: lexical analysis, syntax analysis, semantic analysis, intermediate code generation, optimization, and target code generation. The compiler generates assembly code that can be assembled and linked to create executable programs.</p>
+
+                                <h3>Technical Challenges</h3>
+                                <p>The main challenges included designing a coherent language grammar, implementing efficient parsing algorithms, managing symbol tables and scopes, and generating correct assembly code. I solved these by carefully designing the language specification, implementing robust error handling, creating efficient data structures for symbol management, and thoroughly testing the compilation process with various input programs.</p>
+                            </div>
+                            <div class="overview-sidebar">
+                                <div class="tech-stack-card">
+                                    <h3>Technology Stack</h3>
+                                    <div class="tech-categories">
+                                        <div class="tech-category">
+                                            <h4>Compiler Tools</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Flex (Lex)</span>
+                                                <span class="tech-tag">Bison (Yacc)</span>
+                                                <span class="tech-tag">C++</span>
+                                                <span class="tech-tag">Assembly</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Compiler Phases</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Lexical Analysis</span>
+                                                <span class="tech-tag">Syntax Analysis</span>
+                                                <span class="tech-tag">Semantic Analysis</span>
+                                                <span class="tech-tag">Code Generation</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Language Features</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Variables & Types</span>
+                                                <span class="tech-tag">Control Structures</span>
+                                                <span class="tech-tag">Functions</span>
+                                                <span class="tech-tag">Error Handling</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Development Tools</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">GCC</span>
+                                                <span class="tech-tag">Make</span>
+                                                <span class="tech-tag">Debugging</span>
+                                                <span class="tech-tag">Testing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="development-process">
+                        <h2>Development Process</h2>
+                        <div class="process-timeline">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Language Design & Grammar Definition</h3>
+                                    <p>Designed the JYP programming language syntax and semantics, defining the grammar rules, data types, and control structures. Created formal grammar specifications for Flex and Bison, ensuring the language is both expressive and efficiently parseable.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Lexical & Syntax Analysis</h3>
+                                    <p>Implemented the lexical analyzer using Flex to recognize tokens and handle basic lexical errors. Built the parser using Bison to construct the Abstract Syntax Tree (AST) and perform syntax validation. Added comprehensive error reporting and recovery mechanisms.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Semantic Analysis & Symbol Management</h3>
+                                    <p>Implemented semantic analysis including type checking, scope management, and symbol table operations. Created efficient data structures for managing variables, functions, and their scopes. Added semantic error detection and reporting capabilities.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Code Generation & Optimization</h3>
+                                    <p>Developed the code generation phase to translate the AST into assembly code. Implemented basic optimizations and register allocation strategies. Created comprehensive testing suite with various test cases to validate the compilation process and generated code correctness.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="key-learnings">
+                        <h2>Key Learnings</h2>
+                        <div class="learnings-grid">
+                            <div class="learning-card">
+                                <i class="fas fa-language"></i>
+                                <h3>Language Design</h3>
+                                <p>Gained deep understanding of programming language design principles, grammar specification, and the relationship between language features and compiler complexity.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-cogs"></i>
+                                <h3>Compiler Architecture</h3>
+                                <p>Mastered the complete compiler pipeline from lexical analysis to code generation, understanding the role and implementation of each compilation phase.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-code"></i>
+                                <h3>Systems Programming</h3>
+                                <p>Developed expertise in low-level programming concepts, assembly language, memory management, and efficient algorithm implementation.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-bug"></i>
+                                <h3>Error Handling</h3>
+                                <p>Learned to implement robust error detection and recovery mechanisms in complex systems, ensuring graceful handling of various error conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="wcag-checker" class="project-detail" style="display: none;">
+                    <div class="project-hero">
+                        <div class="project-hero-content">
+                            <h1>WCAG Compliance Checker</h1>
+                            <p class="project-subtitle">A VS Code extension that helps developers follow Web Content Accessibility Guidelines (WCAG) 2.1 by providing real-time accessibility feedback and suggestions</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Completed: February 2024</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration: 1.5 months</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Team: Solo Project</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/YethinMannem/wcag-compliance-checker" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                                <a href="#" class="btn btn-secondary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    VS Code Marketplace
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-overview">
+                        <div class="overview-grid">
+                            <div class="overview-content">
+                                <h2>Project Overview</h2>
+                                <p>The WCAG Compliance Checker is a comprehensive VS Code extension designed to help developers create more accessible web applications by providing real-time feedback on Web Content Accessibility Guidelines (WCAG) 2.1 compliance. This tool bridges the gap between development and accessibility requirements, making it easier for developers to build inclusive applications.</p>
+                                
+                                <h3>Business Problem</h3>
+                                <p>Web accessibility is often overlooked during development due to lack of awareness and tools. Many developers struggle to understand and implement WCAG guidelines, leading to inaccessible applications that exclude users with disabilities. This extension addresses this gap by providing immediate, contextual feedback during the development process, helping teams build more inclusive applications from the start.</p>
+
+                                <h3>Key Features</h3>
+                                <ul>
+                                    <li>Real-time WCAG 2.1 compliance checking in HTML, CSS, and JavaScript files</li>
+                                    <li>Contextual error highlighting with detailed explanations and severity levels</li>
+                                    <li>Automated suggestions for accessibility improvements</li>
+                                    <li>Support for all WCAG 2.1 success criteria (A, AA, AAA levels)</li>
+                                    <li>Customizable rule configurations and severity thresholds</li>
+                                    <li>Integration with VS Code's Problems panel and status bar</li>
+                                    <li>Quick-fix suggestions for common accessibility issues</li>
+                                    <li>Documentation links to official WCAG guidelines</li>
+                                    <li>Performance optimized for large codebases</li>
+                                    <li>Multi-language support for international accessibility standards</li>
+                                </ul>
+
+                                <h3>Technical Implementation</h3>
+                                <p>The extension is built using TypeScript and leverages VS Code's Language Server Protocol (LSP) for efficient code analysis. It implements a custom parser that analyzes HTML structure, CSS styling, and JavaScript interactions to identify potential accessibility violations. The system uses a rule-based engine that applies WCAG 2.1 success criteria to detect issues like missing alt text, insufficient color contrast, keyboard navigation problems, and semantic HTML violations.</p>
+
+                                <h3>Technical Challenges</h3>
+                                <p>The main challenges included creating accurate accessibility rule implementations, optimizing performance for large files, and providing meaningful suggestions that developers can easily implement. I solved these by implementing efficient parsing algorithms, creating a comprehensive rule engine based on WCAG specifications, and developing a suggestion system that provides actionable, contextual recommendations with code examples.</p>
+                            </div>
+                            <div class="overview-sidebar">
+                                <div class="tech-stack-card">
+                                    <h3>Technology Stack</h3>
+                                    <div class="tech-categories">
+                                        <div class="tech-category">
+                                            <h4>Core Technologies</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">TypeScript</span>
+                                                <span class="tech-tag">VS Code API</span>
+                                                <span class="tech-tag">Language Server Protocol</span>
+                                                <span class="tech-tag">Node.js</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Accessibility Standards</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">WCAG 2.1</span>
+                                                <span class="tech-tag">Section 508</span>
+                                                <span class="tech-tag">ARIA Guidelines</span>
+                                                <span class="tech-tag">Semantic HTML</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Analysis Features</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Static Analysis</span>
+                                                <span class="tech-tag">Rule Engine</span>
+                                                <span class="tech-tag">Quick Fixes</span>
+                                                <span class="tech-tag">Real-time Feedback</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Development Tools</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">VS Code Extension</span>
+                                                <span class="tech-tag">Custom Parser</span>
+                                                <span class="tech-tag">Configuration System</span>
+                                                <span class="tech-tag">Documentation Integration</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="development-process">
+                        <h2>Development Process</h2>
+                        <div class="process-timeline">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Research & Standards Analysis</h3>
+                                    <p>Thoroughly studied WCAG 2.1 guidelines, Section 508 requirements, and ARIA specifications. Analyzed existing accessibility tools to identify gaps and opportunities for improvement. Designed the rule engine architecture to handle different types of accessibility violations.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>VS Code Extension Development</h3>
+                                    <p>Set up the VS Code extension project structure using Yeoman generator. Implemented the core extension functionality with TypeScript, including file parsing, rule application, and VS Code integration. Created the language server for efficient code analysis.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Rule Engine Implementation</h3>
+                                    <p>Built a comprehensive rule engine that implements WCAG 2.1 success criteria. Created parsers for HTML, CSS, and JavaScript to detect accessibility issues. Implemented severity levels, contextual suggestions, and quick-fix capabilities for common problems.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Testing & Optimization</h3>
+                                    <p>Conducted extensive testing with various codebases to ensure accuracy and performance. Optimized the extension for large files and complex projects. Added comprehensive error handling and user feedback mechanisms. Prepared for VS Code Marketplace publication.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="key-learnings">
+                        <h2>Key Learnings</h2>
+                        <div class="learnings-grid">
+                            <div class="learning-card">
+                                <i class="fas fa-universal-access"></i>
+                                <h3>Web Accessibility</h3>
+                                <p>Gained deep understanding of WCAG 2.1 guidelines, accessibility best practices, and the importance of inclusive design in modern web development.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-code"></i>
+                                <h3>VS Code Extension Development</h3>
+                                <p>Mastered VS Code extension architecture, Language Server Protocol, and creating developer tools that integrate seamlessly with the IDE workflow.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-search"></i>
+                                <h3>Static Code Analysis</h3>
+                                <p>Developed expertise in parsing code, implementing rule engines, and providing meaningful feedback that helps developers improve their code quality.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-users"></i>
+                                <h3>Developer Experience</h3>
+                                <p>Learned to create tools that enhance developer productivity while promoting best practices and accessibility awareness in the development community.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="markdown-editor" class="project-detail" style="display: none;">
+                    <div class="project-hero">
+                        <div class="project-hero-content">
+                            <h1>Markdown Multicollab Editor</h1>
+                            <p class="project-subtitle">A real-time collaborative markdown editor with live preview and multi-user support for seamless team collaboration</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Completed: January 2024</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration: 2 months</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Team: Collaborative Project</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Snehil-Mittal/Markdown-Multicollab-Editor" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                                <a href="#" class="btn btn-secondary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-overview">
+                        <div class="overview-grid">
+                            <div class="overview-content">
+                                <h2>Project Overview</h2>
+                                <p>The Markdown Multicollab Editor is a sophisticated real-time collaborative editing platform that enables multiple users to work simultaneously on markdown documents. Built with modern web technologies, this project demonstrates advanced real-time communication, state synchronization, and user experience design principles.</p>
+                                
+                                <h3>Business Problem</h3>
+                                <p>Traditional document editing tools lack real-time collaboration features, making team collaboration inefficient with version conflicts and delayed feedback. This project addresses the need for instant collaborative editing with live preview capabilities, enabling teams to work together seamlessly on technical documentation, project notes, and content creation.</p>
+
+                                <h3>Key Features</h3>
+                                <ul>
+                                    <li>Real-time collaborative editing with multiple users</li>
+                                    <li>Live markdown preview with syntax highlighting</li>
+                                    <li>Room-based collaboration system for organized workspaces</li>
+                                    <li>User presence indicators and cursor tracking</li>
+                                    <li>Conflict resolution and operational transformation</li>
+                                    <li>Auto-save functionality with version history</li>
+                                    <li>Export capabilities (PDF, HTML, Markdown)</li>
+                                    <li>Responsive design for desktop and mobile devices</li>
+                                    <li>User authentication and session management</li>
+                                    <li>Real-time notifications and chat features</li>
+                                </ul>
+
+                                <h3>Technical Implementation</h3>
+                                <p>The application uses a client-server architecture with Socket.io for real-time bidirectional communication. The frontend is built with vanilla JavaScript and CSS for optimal performance, while the backend leverages Node.js with Express for handling concurrent connections and document synchronization. The system implements operational transformation algorithms to handle concurrent edits and maintain document consistency.</p>
+
+                                <h3>Technical Challenges</h3>
+                                <p>The main challenges included implementing real-time synchronization without conflicts, managing multiple concurrent users efficiently, and ensuring low-latency communication. I solved these by implementing operational transformation algorithms, optimizing Socket.io event handling, and creating a robust state management system that handles edge cases and network interruptions gracefully.</p>
+                            </div>
+                            <div class="overview-sidebar">
+                                <div class="tech-stack-card">
+                                    <h3>Technology Stack</h3>
+                                    <div class="tech-categories">
+                                        <div class="tech-category">
+                                            <h4>Frontend</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">JavaScript (ES6+)</span>
+                                                <span class="tech-tag">HTML5</span>
+                                                <span class="tech-tag">CSS3</span>
+                                                <span class="tech-tag">Socket.io Client</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Backend</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Node.js</span>
+                                                <span class="tech-tag">Express.js</span>
+                                                <span class="tech-tag">Socket.io</span>
+                                                <span class="tech-tag">MongoDB</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Real-time Features</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">WebSocket</span>
+                                                <span class="tech-tag">Operational Transform</span>
+                                                <span class="tech-tag">Conflict Resolution</span>
+                                                <span class="tech-tag">State Synchronization</span>
+                                            </div>
+                                        </div>
+                                        <div class="tech-category">
+                                            <h4>Features</h4>
+                                            <div class="tech-items">
+                                                <span class="tech-tag">Live Preview</span>
+                                                <span class="tech-tag">Multi-user Support</span>
+                                                <span class="tech-tag">Room Management</span>
+                                                <span class="tech-tag">Auto-save</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="development-process">
+                        <h2>Development Process</h2>
+                        <div class="process-timeline">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Architecture Design & Setup</h3>
+                                    <p>Designed the client-server architecture with Socket.io integration. Set up the Node.js backend with Express server and MongoDB for document storage. Created the basic project structure with separate client and server directories for maintainability.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Real-time Communication</h3>
+                                    <p>Implemented Socket.io event handlers for user connections, disconnections, and room management. Created the operational transformation system for handling concurrent edits and maintaining document consistency across multiple users.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Frontend Development</h3>
+                                    <p>Built the markdown editor interface with live preview functionality. Implemented user presence indicators, cursor tracking, and real-time collaboration features. Created responsive design for optimal user experience across devices.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Testing & Optimization</h3>
+                                    <p>Conducted extensive testing with multiple concurrent users to ensure stability and performance. Optimized Socket.io event handling and implemented error recovery mechanisms. Added comprehensive error handling and user feedback systems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="key-learnings">
+                        <h2>Key Learnings</h2>
+                        <div class="learnings-grid">
+                            <div class="learning-card">
+                                <i class="fas fa-network-wired"></i>
+                                <h3>Real-time Systems</h3>
+                                <p>Gained deep understanding of WebSocket communication, operational transformation algorithms, and building scalable real-time applications with proper conflict resolution.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-users"></i>
+                                <h3>Collaborative Features</h3>
+                                <p>Learned to implement user presence tracking, cursor synchronization, and room-based collaboration systems for enhanced team productivity.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-code"></i>
+                                <h3>State Management</h3>
+                                <p>Developed expertise in managing complex application state across multiple clients, handling concurrent operations, and maintaining data consistency.</p>
+                            </div>
+                            <div class="learning-card">
+                                <i class="fas fa-rocket"></i>
+                                <h3>Performance Optimization</h3>
+                                <p>Mastered techniques for optimizing real-time applications, reducing latency, and ensuring smooth user experience with efficient event handling.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="gep-se" class="project-detail" style="display: none;">
+                    <div class="project-hero">
+                        <div class="project-hero-content">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/GEP_Worldwide_logo.svg/2560px-GEP_Worldwide_logo.svg.png" alt="GEP Logo" style="height:60px; margin-bottom:1rem; object-fit:contain;">
+                            <h1>Software Engineer - Full Stack</h1>
+                            <p class="project-subtitle">GEP | Hyderabad, India | Aug 2023 - Jul 2024</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-building"></i>
+                                    <span>GEP Worldwide</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-globe"></i>
+                                    <a href="https://www.gep.com" target="_blank">www.gep.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-overview">
+                        <div class="overview-content">
+                            <h2>Role Overview</h2>
+                            <p>Worked on enterprise procurement solutions, focusing on migration tools, dashboards, and robust automation for quality assurance.</p>
+                            <h3>Key Achievements</h3>
+                            <ul>
+                                <li>Designed and implemented the end-to-end flow for Delta Migration Tool using MEAN stack, reduced time taken by 50%</li>
+                                <li>Created Metrics Dashboard to monitor and display the percentage of deltas migrated in real time</li>
+                                <li>Identified, troubleshooted, and resolved UI and API bugs, improving application stability and user experience</li>
+                                <li>Ensured the quality and robustness of modules by implementing unit testing and developing an automation testing suite using Cypress, achieving 100% test case coverage</li>
+                                <li>Actively participated in code reviews and completed multiple user testing cycles to ensure features work for all user types</li>
+                            </ul>
+                            <h3>Technical Stack</h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">.NET</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">REST APIs</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">Cypress</span>
+                                <span class="tech-tag">Unit Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="gep-intern" class="project-detail" style="display: none;">
+                    <div class="project-hero">
+                        <div class="project-hero-content">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/GEP_Worldwide_logo.svg/2560px-GEP_Worldwide_logo.svg.png" alt="GEP Logo" style="height:60px; margin-bottom:1rem; object-fit:contain;">
+                            <h1>Technology Intern</h1>
+                            <p class="project-subtitle">GEP | Mumbai, India | May 2022 - Aug 2022</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-building"></i>
+                                    <span>GEP Worldwide</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-globe"></i>
+                                    <a href="https://www.gep.com" target="_blank">www.gep.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-overview">
+                        <div class="overview-content">
+                            <h2>Role Overview</h2>
+                            <p>Contributed to automation and collaborative tooling, focusing on test coverage and real-time document editing solutions.</p>
+                            <h3>Key Achievements</h3>
+                            <ul>
+                                <li>Built a Cypress automation suite covering 90%+ of test cases and documented feature improvements.</li>
+                                <li>Developed a collaborative Markdown Text Editor with MERN stack, YJS, and WebRTC for real-time peer-to-peer editing.</li>
+                                <li>Enabled multi-user, real-time document collaboration for distributed teams.</li>
+                            </ul>
+                            <h3>Technical Stack</h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">.NET</span>
+                                <span class="tech-tag">Cypress</span>
+                                <span class="tech-tag">MERN Stack</span>
+                                <span class="tech-tag">YJS</span>
+                                <span class="tech-tag">WebRTC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mathworks-intern" class="project-detail" style="display: none;">
+                    <div class="project-hero">
+                        <div class="project-hero-content">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/MathWorks_Logo.png" alt="MathWorks Logo" style="height:60px; margin-bottom:1rem; object-fit:contain;">
+                            <h1>Software Engineering Intern</h1>
+                            <p class="project-subtitle">MathWorks | May 2025 - Aug 2025</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-building"></i>
+                                    <span>MathWorks</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-globe"></i>
+                                    <a href="https://www.mathworks.com" target="_blank">www.mathworks.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-overview">
+                        <div class="overview-content">
+                            <h2>Role Overview</h2>
+                            <p>Worked as a Software Engineering Intern at MathWorks. (Add your detailed experience here!)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Yethin Mannem. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/yethin-mannem/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/yethinmannem" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
