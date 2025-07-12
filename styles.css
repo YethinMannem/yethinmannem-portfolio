@@ -12,8 +12,9 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #1a1a1a;
     overflow-x: hidden;
+    background-color: #ffffff;
 }
 
 .container {
@@ -60,7 +61,7 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: #1a1a1a;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
@@ -94,7 +95,7 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: #333;
+    background: #1a1a1a;
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -151,14 +152,14 @@ body {
 
 .hero-subtitle {
     font-size: 1.5rem;
-    color: #666;
+    color: #4a4a4a;
     margin-bottom: 1.5rem;
     font-weight: 500;
 }
 
 .hero-description {
     font-size: 1.1rem;
-    color: #555;
+    color: #2d2d2d;
     margin-bottom: 2rem;
     line-height: 1.8;
 }
@@ -193,14 +194,15 @@ body {
 
 .btn-secondary {
     background: transparent;
-    color: #667eea;
-    border: 2px solid #667eea;
+    color: #4a5fd1;
+    border: 2px solid #4a5fd1;
 }
 
 .btn-secondary:hover {
-    background: #667eea;
+    background: #4a5fd1;
     color: white;
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 95, 209, 0.4);
 }
 
 .profile-card {
@@ -236,11 +238,11 @@ body {
 .profile-info h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #1a1a1a;
 }
 
 .profile-info p {
-    color: #666;
+    color: #4a4a4a;
     margin-bottom: 1rem;
 }
 
@@ -334,7 +336,7 @@ section {
 
 .about-text p {
     font-size: 1.1rem;
-    color: #555;
+    color: #667eea;
     margin-bottom: 1.5rem;
     line-height: 1.8;
 }
@@ -357,7 +359,7 @@ section {
 }
 
 .stat p {
-    color: #666;
+    color: #667eea;
     font-weight: 500;
 }
 
@@ -373,6 +375,7 @@ section {
     border-radius: 10px;
     text-align: center;
     transition: all 0.3s ease;
+    color: #2d2d2d;
 }
 
 .tech-item:hover {
@@ -389,6 +392,9 @@ section {
 
 /* Projects Section */
 .projects {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 40px 0;
+  border-radius: 24px;
   min-height: 700px;
 }
 
@@ -498,7 +504,7 @@ section {
 }
 
 .project-content p {
-    color: #555;
+    color: #2d2d2d;
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
@@ -528,103 +534,11 @@ section {
 
 /* Experience Section */
 .experience {
-    background: linear-gradient(135deg, #f5f7fa 0%, #e0c3fc 100%);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     padding: 40px 0;
     border-radius: 24px;
 }
 
-.timeline {
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto;
-    background: none;
-    z-index: 1;
-}
-
-.timeline::before, .timeline-line {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background: linear-gradient(to bottom, #6a82fb, #fc5c7d);
-    border-radius: 2px;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-.timeline-item {
-    margin-bottom: 2.2rem;
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.18s, box-shadow 0.18s;
-    z-index: 3;
-}
-
-.timeline-item.left .timeline-content,
-.timeline-item.right .timeline-content {
-    background: linear-gradient(120deg, #fdfbfb 0%, #e0c3fc 100%);
-    border-left: 6px solid #6a82fb;
-}
-
-.timeline-item .timeline-content {
-    box-shadow: 0 4px 24px rgba(108, 99, 255, 0.08);
-    border-radius: 18px;
-    transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
-    border: none;
-}
-
-.timeline-item:hover .timeline-content {
-    box-shadow: 0 8px 32px rgba(252, 92, 125, 0.18);
-    transform: translateY(-4px) scale(1.03);
-    border: 2px solid #6a82fb;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-    margin-left: 0;
-    margin-right: 50%;
-    padding-right: 2rem;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-    margin-left: 32px;
-    margin-right: 0;
-    padding-left: 0;
-}
-@media (max-width: 900px) {
-  .timeline-item:nth-child(even) .timeline-content {
-    margin-left: 0;
-  }
-  .timeline::before, .timeline-line {
-    left: 24px;
-  }
-  .timeline-item, .timeline-item.left, .timeline-item.right {
-    left: 0;
-    justify-content: flex-start;
-  }
-  .timeline-content {
-    margin-left: 48px;
-  }
-}
-
-/* Enhance timeline-content to look like project cards */
-.timeline-content {
-    background: #f8f9fa;
-    border: 1.5px solid #ececff;
-    border-radius: 18px;
-    box-shadow: 0 2px 12px rgba(102,126,234,0.07);
-    padding: 1.1rem 1.3rem 1.1rem 1.1rem;
-    margin-bottom: 1.2rem;
-    min-width: 220px;
-    max-width: 370px;
-    width: 100%;
-    font-size: 0.98rem;
-    display: flex;
-    align-items: center;
-    position: relative;
-    transition: box-shadow 0.22s, border 0.22s, transform 0.18s;
-}
 .timeline-header {
     margin-bottom: 0;
     display: flex;
@@ -652,7 +566,7 @@ section {
 .timeline-info h3 {
     font-size: 1.13rem;
     font-weight: 700;
-    color: #333;
+    color: #1a1a1a;
     margin-bottom: 0.18rem;
     letter-spacing: -0.5px;
 }
@@ -663,7 +577,7 @@ section {
     font-size: 1.01rem;
 }
 .duration {
-    color: #888;
+    color: #666;
     font-size: 0.97rem;
     font-weight: 400;
 }
@@ -674,7 +588,7 @@ section {
 }
 .timeline-content ul li {
     margin-bottom: 0.5rem;
-    color: #555;
+    color: #2d2d2d;
     line-height: 1.6;
     position: relative;
     padding-left: 1.2rem;
@@ -796,11 +710,11 @@ section {
 .contact-info h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #1a1a1a;
 }
 
 .contact-info p {
-    color: #555;
+    color: #2d2d2d;
     margin-bottom: 2rem;
     line-height: 1.8;
 }
@@ -832,11 +746,11 @@ section {
 .contact-item h4 {
     font-size: 1rem;
     margin-bottom: 0.25rem;
-    color: #333;
+    color: #1a1a1a;
 }
 
 .contact-item p {
-    color: #666;
+    color: #4a4a4a;
     margin: 0;
 }
 
@@ -875,7 +789,7 @@ section {
 
 /* Footer */
 .footer {
-    background: #333;
+    background: #1a1a1a;
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -1692,7 +1606,7 @@ html {
 .timeline-info h3 {
   font-size: 1.13rem;
   font-weight: 700;
-  color: #333;
+  color: #1a1a1a;
   margin-bottom: 0.18rem;
   letter-spacing: -0.5px;
 }
@@ -1703,7 +1617,7 @@ html {
   font-size: 1.01rem;
 }
 .duration {
-  color: #888;
+  color: #666;
   font-size: 0.97rem;
   font-weight: 400;
 }
@@ -1895,7 +1809,7 @@ html {
 }
 .carousel-desc {
   font-size: 0.93rem;
-  color: #444;
+  color: #2d2d2d;
   margin: 0 0 0.18rem 0;
   line-height: 1.4;
   max-height: 2.7em;
@@ -1996,7 +1910,7 @@ html {
   font-size: 0.3rem;
   font-weight: 700;
   margin: 0 0 0.12rem 0;
-  color: #222;
+  color: #1a1a1a;
   line-height: 0.9;
   white-space: nowrap;
   overflow: hidden;
@@ -2005,7 +1919,7 @@ html {
 }
 .carousel-desc {
   font-size: 0.5rem;
-  color: #444;
+  color: #2d2d2d;
   margin: 0 0 0.05rem 0;
   line-height: 1.4;
   max-height: 12em;

@@ -266,10 +266,15 @@ document.querySelectorAll('.timeline-content').forEach(item => {
     });
 });
 
-// Add loading animation
+// Add loading animation with fallback
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
+
+// Fallback: ensure loading screen is removed after 3 seconds
+setTimeout(() => {
+    document.body.classList.add('loaded');
+}, 3000);
 
 // Add CSS for loading state
 const style = document.createElement('style');
@@ -290,6 +295,13 @@ style.textContent = `
         display: flex;
         align-items: center;
         justify-content: center;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+    
+    body.loaded::before {
+        opacity: 0;
+        pointer-events: none;
     }
     
     body:not(.loaded)::after {
@@ -302,6 +314,13 @@ style.textContent = `
         font-size: 1.5rem;
         font-weight: 600;
         z-index: 10000;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+    
+    body.loaded::after {
+        opacity: 0;
+        pointer-events: none;
     }
     
     .skill-item {
