@@ -97,15 +97,15 @@ experienceItems.forEach(item => experienceObserver.observe(item));
 // Form submission handling
 const contactForm = document.querySelector('.contact-form form');
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
         // Get form data
         const formData = new FormData(contactForm);
-        const name = contactForm.querySelector('input[type="text"]').value;
-        const email = contactForm.querySelector('input[type="email"]').value;
-        const subject = contactForm.querySelectorAll('input[type="text"]')[1].value;
-        const message = contactForm.querySelector('textarea').value;
+        const name = contactForm.querySelector('input[name="name"]').value;
+        const email = contactForm.querySelector('input[name="email"]').value;
+        const subject = contactForm.querySelector('input[name="subject"]').value;
+        const message = contactForm.querySelector('textarea[name="message"]').value;
         
         // Simple validation
         if (!name || !email || !subject || !message) {
@@ -118,9 +118,46 @@ if (contactForm) {
             return;
         }
         
-        // Simulate form submission
-        showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-        contactForm.reset();
+        // Show loading state
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+        
+        try {
+            console.log('Sending form data:', {
+                name: name,
+                email: email,
+                subject: subject,
+                message: message
+            });
+            
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            console.log('Response status:', response.status);
+            console.log('Response:', response);
+            
+            if (response.ok) {
+                showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+                contactForm.reset();
+            } else {
+                const errorData = await response.text();
+                console.error('Formspree error:', errorData);
+                throw new Error('Failed to send message');
+            }
+        } catch (error) {
+            console.error('Form submission error:', error);
+            showNotification('Failed to send message. Please try again or contact me directly.', 'error');
+        } finally {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        }
     });
 }
 
